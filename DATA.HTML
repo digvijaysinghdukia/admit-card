@@ -15,13 +15,6 @@
       display: grid;
       place-items: center;
     }
-    .entry-from{
-        width: 100vw;
-        height: 50vh;
-        display: grid;
-        place-items: center;
-
-    }
     #nameDispla{
       width: 100vw;
       height: 50vw;
@@ -164,7 +157,7 @@
               <li>Paste your photo clearly on the admit card.</li>
               <li>Do not bring any kind of electronic item in the exam.</li>
             </div>
-            <button type="button" onclick="admitPDF()">View Names</button>
+            <button type="button" onclick="admitPDF()">download</button>
           </section>
         `;
 
@@ -209,8 +202,7 @@
   </style>
 </head>
 <body>
-  <section class="entry-from">
-    <h2>Enter Your Name and Your Father's Name</h2>
+  <h2>Enter Your Name and Your Father's Name</h2>
   <form id="nameForm">
     <label for="yourName">Your Name:</label>
     <input type="text" id="yourName" name="yourName" required><br><br>
@@ -220,7 +212,7 @@
 
     <button type="button" onclick="displayNames()">View Names</button>
   </form>
-  </section>
 
+  <div id="nameDisplay"></div>
 </body>
 </html>
